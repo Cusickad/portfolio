@@ -1,0 +1,31 @@
+header{
+  background-attachment: fixed; /* Parallax effect - borrowed from homework 4 */
+  background-image: url("../img/header.jpg");      /* Your code here - Link to header.jpg in the images folder */
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 500px;                /* Parallax effect */
+}
+
+.card img{
+  width: 60%;
+}
+
+.engagement img{
+  width: 60%
+}
+
+.gallery img{
+  width: 60%
+}
+
+.teamtext p{
+  text-align: center;
+  font-size: 16pt;
+  max-width: 1000px;
+}
+
+.teamphoto img{
+  width: 500px;
+}
