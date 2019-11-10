@@ -1,47 +1,83 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151979341-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151979341-1');
+</script>
     <meta charset="utf-8">
     <title>Michelle Maries Adam</title>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
+   <script src="https://kit.fontawesome.com/b5ae79428f.js" crossorigin="anonymous"></script>
+   <meta name= "viewport" content= "width= device-width, initial-scale=1, shrink-to-fit=no">
+ </head>
   <body>
-<div class="skip"><a href="#content">Skip to Main Content</a></div>
+<div class="skip"><a href="#team_content">Skip to Main Content</a></div>
 <header>
-  <h1> Michelle Marries Adam</h1>
-  </header>
-  <nav>
+  <div class="title">
+  <h1> Michelle Marries Adam</h1></div>
+  <a href="javascript:void(0);" class="nav_toggle" onclick="sizeFunction()" aria-label="Open Navigation Menu"><i class="fas fa-bars"></i></a>
+</header>
+  <nav class="navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="team.html">Meet the Team</a></li>
+      <li><a href="team.html" class="current_page">Meet the Team</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="date_info.html">Information & Contact</a></li>
     </ul>
   </nav>
-  <section id="content">
+
+<script>
+function hamburgerFunction(){
+var nav = document.querySelector('.navigation');
+if (nav.style.display === "block"){
+  nav.style.display = "none";
+} else {
+  nav.style.display = "block"
+}
+}
+function sizeFunction(){
+  if (window.matchMedia("(max-width: 600px)").matches){
+    hamburgerFunction()
+  }
+}
+</script>
+  <div class="container">
   <h2>Meet the Team</h2>
+  <section class= "meet" id="team_content">
   <h3>Adam</h3>
   <div class="teamphoto">
   <img src="img/adam_photo.png" alt="Adam Cusick"></div>
   <h4>(As Told by Michelle)</h4>
-<div class="teamtext">  <p> <b>Adam Cusick</b> is a small town boy from Romeo who headed to Michigan State University to study politics and history.  Halfway through his studies, he met music major Michelle at a tuba Halloween Party after a victory against the Wolverines.  Michelle brought her friend Vanessa to the party, who poked a stranger in the face to give Michelle someone to talk to while she was enjoying the party.  This stranger, who turned out to be Adam, talked to Michelle for hours, and insisted she come visit him and watch Star Wars with him, as she had never seen any of the series.  Within a week of this meeting, they promptly began dating.</p>
+  <p> <b>Adam Cusick</b> is a small town boy from Romeo who headed to Michigan State University to study politics and history.  Halfway through his studies, he met music major Michelle at a tuba Halloween Party after a victory against the Wolverines.  Michelle brought her friend Vanessa to the party, who poked a stranger in the face to give Michelle someone to talk to while she was enjoying the party.  This stranger, who turned out to be Adam, talked to Michelle for hours, and insisted she come visit him and watch Star Wars with him, as she had never seen any of the series.  Within a week of this meeting, they promptly began dating.</p>
 
   <p>Through the years that followed, Adam has proven himself as a comedic figure that's quick on his feet in nearly any situation.  He became a cat person with the aid of Michelle and adopted his feline son, Squiggles.  Brilliantly intelligent (although he will deny it) about many topics, he can dominate a trivia night and can converse easily with just about anyone.  His undying loyalty, charm, handsome looks, and commitment and dedication are just a few of the things that won over Michelle's heart.
-  </p></div>
+  </p>
+</section>
+<div class="lside"></div>
+<div class='rside'></div>
+<section class="meet">
   <h3>Michelle</h3>
     <div class="teamphoto"><img src="img/michelle_photo.jpg" alt="Michelle Myers"></div>
   <h4>(As Told by Adam)</h4>
-  <div class="teamtext"><p><b>Michelle Myers</b> comes from just outside of Flint and also headed to Michigan State University, although her studies were focused on music. She met Adam through the sequence of events described in Adam's short bio, so there is no need to rehash them here.  Adam did succeed in getting to to watch all the Star Wars films (although it took some time), and now she regularly watches films with Adam.  After getting her degree in clarinet performance, Michelle has gone on to do marketing and graphic design work for Saginaw Control and Engineering, an electrical engineering company.  While completely revamping their marketing strategy, she has also found time to record an album with her experimental music ensemble, The _____ Experiment.
+  <p><b>Michelle Myers</b> comes from just outside of Flint and also headed to Michigan State University, although her studies were focused on music. She met Adam through the sequence of events described in Adam's short bio, so there is no need to rehash them here.  Adam did succeed in getting to to watch all the Star Wars films (although it took some time), and now she regularly watches films with Adam.  After getting her degree in clarinet performance, Michelle has gone on to do marketing and graphic design work for Saginaw Control and Engineering, an electrical engineering company.  While completely revamping their marketing strategy, she has also found time to record an album with her experimental music ensemble, The _____ Experiment.
 </p>
-<p>Now that you know about what Michelle has done, you can learn about who she is.  Michelle is beautiful, both inside and out.  She is the most caring person you will ever meet and genuinely wants to better the lives of those close to her, even at great cost to herself. She is a great artist, both possesing the creativity and vision to imagine great works, as well as the talent to bring them into being. She is driven, organized, and never backs down. She is clever, quick-witted, funny, and a great conversationalist.  She loves cats and brought Squiggles into Adam's life.  She is the best thing in Adam's life, and he loves her deeply.</p></div>
+<p>Now that you know about what Michelle has done, you can learn about who she is.  Michelle is beautiful, both inside and out.  She is the most caring person you will ever meet and genuinely wants to better the lives of those close to her, even at great cost to herself. She is a great artist, both possesing the creativity and vision to imagine great works, as well as the talent to bring them into being. She is driven, organized, and never backs down. She is clever, quick-witted, funny, and a great conversationalist.  She loves cats and brought Squiggles into Adam's life.  She is the best thing in Adam's life, and he loves her deeply.</p>
+</section>
+<section class="meet">
   <h3>Squiggles</h3>
     <div class="teamphoto"><img src="img/squiggles_photo.jpg" alt="Squiggles Myers-Cusick"></div>
   <h4>(As Told by Michelle and Adam)</h4>
-  <div class="teamtext">
 <p> <b>Squiggles Myers-Cusick</b> is a fun-loving lazy cat.  Coming from the streets outside Flint, Michigan, Squiggles claimed Michelle and her friend Charles while on their first (and last) jog of the summer. Using his charm and wit, he managed to win over Michelle and Adam, who now share joint custody over Squiggles.  His hobbies include biting, eating, and desperately seeking attention.  Nobody can eat a can of food faster than Squiggles, and he would run into a burning building to lick a dirty plate.  Although he certainly looks dapper in his fancy tuxedo, it is doubtful that he will make a physical appearance at the wedding, but he will be there in all of our hearts.
-    </p>  </div>
+    </p>
   </section>
+    </div>
   <footer>
     <p>
       Michelle Marries Adam <br>

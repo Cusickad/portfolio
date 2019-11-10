@@ -1,47 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151979341-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151979341-1');
+</script>
     <meta charset="utf-8">
     <title>Michelle Maries Adam</title>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
    <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="https://kit.fontawesome.com/b5ae79428f.js" crossorigin="anonymous"></script>
+   <meta name= "viewport" content= "width= device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
-<div class="skip"><a href="#content">Skip to Main Content</a></div>
+<div class="skip"><a href="#gallery_content">Skip to Main Content</a></div>
 <header>
-  <h1> Michelle Marries Adam</h1>
-  </header>
-  <nav>
+  <div class="title">
+  <h1> Michelle Marries Adam</h1></div>
+  <a href="javascript:void(0);" class="nav_toggle" onclick="sizeFunction()" aria-label="Open Navigation Menu"><i class="fas fa-bars"></i></a>
+</header>
+  <nav class="navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="team.html">Meet the Team</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="gallery.html" class="current_page">Gallery</a></li>
       <li><a href="date_info.html">Information & Contact</a></li>
     </ul>
   </nav>
-  <section id="content">
-    <h2>Gallery</h2>
+
+<script>
+function hamburgerFunction(){
+var nav = document.querySelector('.navigation');
+if (nav.style.display === "block"){
+  nav.style.display = "none";
+} else {
+  nav.style.display = "block"
+}
+}
+function sizeFunction(){
+  if (window.matchMedia("(max-width: 600px)").matches){
+    hamburgerFunction()
+  }
+}
+</script>
+<div class="container">
+<h2>Gallery</h2>
+  <div class="lside"></div>
+  <div class='rside'></div>
+  <section id="content" class="gallery">
+    <div class="gallery_intro">
     <h3>Engagement Photos</h3>
-      <p>Adam and Michelle got engaged on July 27, 2019 at Walt Disney World.</p>
-    <div class="engagement">
+      <p>Adam and Michelle got engaged on July 27, 2019 at Walt Disney World.</p></div>
   <img src="img/gal_eng_ring_castle.jpeg" alt="Adam proposing to Michelle in front of Cinderella's Castle">
   <img src="img/gal_eng_ring.jpeg" alt="A closer view of Adam putting the ring on Michelle's finger">
   <img src="img/gal_eng_smile.jpeg" alt="Adam and Michelle shortly after getting engaged">
   <img src="img/gal_eng_castle_01.jpeg" alt="Adam and Michelle pose in front of Cinderella's Castle">
   <img src="img/gal_eng_castle_02.jpeg" alt="Adam and Michelle in front of Cinderella's Castle">
   <img src="img/gal_disneyland.jpg" alt="The picture that inspired the proposal.  Adam and Michelle in front of Sleeping Beauty's Castle in Disneyland in 2013.">
-    </div>
+</section>
+<section class="gallery" id="gallery_content">
+  <div class="gallery_intro">
   <h3>Photos of Adam and Michelle</h3>
-  <p>Adam and Michelle have had a number of adventures in the time they've been together.</p>
-  <div class="gallery">
+  <p>Adam and Michelle have had a number of adventures in the time they've been together.</p></div>
   <img src="img/gal_couple_color.jpg" alt="Adam and Michelle outside in the fall">
   <img src="img/gal_couple_bw.jpg" alt="Adam and Michelle outside">
   <img src="img/gal_adam_grad.jpg" alt="Adam with Michelle at his graduation">
   <img src="img/gal_cotton_bowl.jpg" alt="Adam and Michelle at the (good) 2015 Cotton Bowl">
   <img src="img/gal_xmas_tree.jpg" alt="Adam and Michelle at Christmas">
   <img src="img/gal_smb.jpg" alt="Adam and Michelle in their Spartan Marching Band uniforms">
-  </div>
   </section>
+  </div>
   <footer>
     <p>
       Michelle Marries Adam <br>

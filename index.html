@@ -1,45 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151979341-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151979341-1');
+</script>
     <meta charset="utf-8">
     <title>Michelle Maries Adam</title>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
    <link rel="stylesheet" type="text/css" href="css/style.css">
+   <script src="https://kit.fontawesome.com/b5ae79428f.js" crossorigin="anonymous"></script>
+   <meta name= "viewport" content= "width= device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
-<div class="skip"><a href="#content">Skip to Main Content</a></div>
+<div class="skip"><a href="#home_content">Skip to Main Content</a></div>
 <header>
-  <h1> Michelle Marries Adam</h1>
+  <div class="title">
+  <h1> Michelle Marries Adam</h1></div>
+  <a href="javascript:void(0);" class="nav_toggle" onclick="sizeFunction()" aria-label="Open Navigation Menu"><i class="fas fa-bars"></i></a>
   </header>
-  <nav>
+  <nav class="navigation">
     <ul>
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" class="current_page">Home</a></li>
       <li><a href="team.html">Meet the Team</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="date_info.html">Information & Contact</a></li>
     </ul>
   </nav>
-<section id="content">
-  <div class="card container">
-    <div class="card"> <!--Card designed by Michelle Myers-->
-      <div class="card front"><img src="img/card_front.jpg" alt="A picture of Adam and Michelle in the style of a movie poster announcing their wedding date as June 21, 2021"></div>
-        <div class="card back"><img src="img/card_back.jpg" alt="More photos of Adam and Michelle in the style of a DVD back cover, announcing the ceremony at 3 PM at St. Josaphat Ukranian Catholic Church in Warren, MI and the reception at 6 PM at Lafayette Grand Banquet Facility in Pontiac, MI"></div>
+
+<script>
+// hamburger menu guide from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+function hamburgerFunction(){
+var nav = document.querySelector('.navigation');
+if (nav.style.display === "block"){
+  nav.style.display = "none";
+} else {
+  nav.style.display = "block"
+}
+}
+function sizeFunction(){
+  if (window.matchMedia("(max-width: 600px)").matches){
+    hamburgerFunction()
+  }
+}
+</script>
+<div class="container">
+<section class="save_the_date">
+  <div class="card_container" >
+    <div class="card" tabindex="12"> <!--Card designed by Michelle Myers-->
+      <div class="card_front"><img src="img/card_front.jpg" alt="A picture of Adam and Michelle in the style of a movie poster announcing their wedding date as June 21, 2021"></div>
+        <div class="card_back"><img src="img/card_back.jpg" alt="More photos of Adam and Michelle in the style of a DVD back cover, announcing the ceremony at 3 PM at St. Josaphat Ukranian Catholic Church in Warren, MI and the reception at 6 PM at Lafayette Grand Banquet Facility in Pontiac, MI"></div>
         </div>
       </div>
 </section>
-<section>
+<div class="lside"></div>
+<div class='rside'></div>
+<section class="home_text" id="home_content" >
+<div class="love_story">
 
-
-<h2>A Love Story Seven Years in the Making</h2>
+<h3>A Love Story Seven Years in the Making</h3>
 <p>
   It was the end of October, 2013.  Two strangers met under improbable circumstances at a Halloween party.  He was an ace attorney.  She was a bee.  He was bored and about to leave.  She was also bored, so her friend poked him in the face and introduced them.  Seven and a half years later, they're (finally) getting married.
 </p>
 <p>And now, Adam and Michelle invite you to share a special moment with them in this one-night-only premiere. You'll gasp in amazement at how beautiful Michelle looks in her dress in the middle of a beautiful ceremony.  You'll give Adam a pity chuckle as he makes terrible wedding-themed jokes throughout the reception.  You will be inspired by their love.  </p>
+</div>
+<div class="party">
 <h3>One Great Party</h3>
 <p>
   While the ceremony is the important part, everyone knows that the reception is the fun part.  Enjoy a live jazz trio while you imbibe at the pre-reception cocktail hour.  Take in the art-deco stylings of the terraced theatre-turned-hall.  Enjoy a quality meal with quality company.  Later on, get down to the groove of DJ Young Man Legend.  Top off the night with even more food as we bring you late-night snacktion, a coffee bar, and the fabled dessert onslaught.  This is a party you won't want to miss.
 </p>
+</div>
 </section>
+</div>
 <footer>
   <p>
     Michelle Marries Adam <br>
