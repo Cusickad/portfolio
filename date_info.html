@@ -79,7 +79,7 @@ function sizeFunction(){
   <section>
     <form  action="https://formspree.io/xqkkppye" method="POST">
       <fieldset>
-        <legend>
+        <legend class="form">
           RSVP
         </legend>
           <label for="firstname"> First Name: </label>
@@ -88,11 +88,14 @@ function sizeFunction(){
         <input type="text" id="lastname" name="lastname" required>
           <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required>
-        <label for="rsvp">Will you be joining us for our wedding?</label>
+        <fieldset><legend>
+        Will you be joining us for our wedding?</legend></fieldset>
         <label><input type="radio" name="coming" id="rsvp" value="Yes" required>I'm delighted to attend</label>
         <label><input type="radio" name="coming" id="notComing" value="No">I wish I could, but sadly no</label>
         <div class="rsvp">
-        <label for="plusOne">Will you be bringing a guest?</label>
+        <fieldset>
+          <legend>
+        Will you be bringing a guest?</legend></fieldset>
         <label><input type="radio" name="guest" id="plusOne" value="Yes">Yes</label>
         <label><input type="radio" name="guest" id="alone" value="No">No</label>
         <div class="guest">
