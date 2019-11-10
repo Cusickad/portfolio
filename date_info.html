@@ -82,11 +82,11 @@ function sizeFunction(){
           RSVP
         </legend>
           <label for="firstname"> First Name: </label>
-          <input type="text" name="firstname" required>
+          <input type="text" id = "firstname" name="firstname" required>
           <label for="lastname">Last Name: </label>
-        <input type="text" name="lastname" required>
+        <input type="text" id="last_name" name="lastname" required>
           <label for="email">Email Address:</label>
-        <input type="email" name="email" required>
+        <input type="email" id="email" name="email" required>
         <label for="rsvp">Will you be joining us for our wedding?</label>
         <label><input type="radio" name="rsvp" id="rsvp" value="Yes" required>I'm delighted to attend</label>
         <label><input type="radio" name="rsvp" id="notComing" value="No">I wish I could, but sadly no</label>
@@ -96,15 +96,15 @@ function sizeFunction(){
         <label><input type="radio" name="guest" id="alone" value="No">No</label>
         <div class="guest">
         <label for="guestfname">Guest First Name:</label>
-        <input type="text" name="guestfname" required>
+        <input type="text" id ="guestfname" name="guestfname" required>
       <label for="guestlname">Guest Last Name:</label>
         <input type="text" name="guestlname" required>
         </div>
         <label for="diet">Dietary Restrictions</label>
-        <textarea name="diet" placeholder="Do you have any dietary restrictions we should know about?"></textarea>
+        <textarea name="diet" id="diet" placeholder="Do you have any dietary restrictions we should know about?"></textarea>
         </div>
           <label for="comments">Do you have any comments or questions?</label>
-        <textarea name="comments"></textarea>
+        <textarea id ="comments" name="comments"></textarea>
         <input type="submit" name="submit" value="Confirm RSVP">
       </fieldset>
 
